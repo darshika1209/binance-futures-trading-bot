@@ -1,0 +1,11 @@
+2026-07-04 22:54:48 | INFO     | cli | CLI invoked | symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=None
+2026-07-04 23:02:25 | INFO     | cli | CLI invoked | symbol=BTCUSDT side=BUY type=MARKET qty=0.001 price=None
+2026-07-04 23:02:25 | INFO     | binance_client | BinanceClient initialised | Testnet: https://testnet.binancefuture.com
+2026-07-04 23:02:25 | INFO     | orders | ============================================================
+2026-07-04 23:02:25 | INFO     | orders | NEW ORDER | MARKET BUY BTCUSDT | qty=0.001 | price=MARKET
+2026-07-04 23:02:25 | INFO     | orders | ============================================================
+2026-07-04 23:02:25 | INFO     | binance_client | Sending MARKET BUY order | symbol=BTCUSDT qty=0.001 price=MARKET
+2026-07-04 23:02:25 | DEBUG    | binance_client | Request params (no signature): {'symbol': 'BTCUSDT', 'side': 'BUY', 'type': 'MARKET', 'quantity': 0.001, 'timestamp': 1783186345365}
+2026-07-04 23:02:26 | DEBUG    | binance_client | HTTP 401 | Response: {"code":-2014,"msg":"API-key format invalid."}
+2026-07-04 23:02:26 | ERROR    | binance_client | HTTP error: 401 Client Error: Unauthorized for url: https://testnet.binancefuture.com/fapi/v1/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.001&timestamp=1783186345365&signature=b04b5069cc558a85aed422f2ba4f5146d8640ef91c90acab1d1bfd7de0df1f8b | Body: {"code":-2014,"msg":"API-key format invalid."}
+2026-07-04 23:02:26 | ERROR    | cli | Unexpected error: 401 Client Error: Unauthorized for url: https://testnet.binancefuture.com/fapi/v1/order?symbol=BTCUSDT&side=BUY&type=MARKET&quantity=0.001&timestamp=1783186345365&signature=b04b5069cc558a85aed422f2ba4f5146d8640ef91c90acab1d1bfd7de0df1f8b

@@ -1,0 +1,10 @@
+2026-07-04 21:22:17 | INFO     | cli | CLI invoked | symbol=ETHUSDT side=SELL type=LIMIT qty=0.01 price=3000.0
+2026-07-04 21:22:17 | INFO     | binance_client | BinanceClient initialised | Testnet: https://testnet.binancefuture.com
+2026-07-04 21:22:17 | INFO     | orders | ============================================================
+2026-07-04 21:22:17 | INFO     | orders | NEW ORDER | LIMIT SELL ETHUSDT | qty=0.01 | price=3000.0
+2026-07-04 21:22:17 | INFO     | orders | ============================================================
+2026-07-04 21:22:17 | INFO     | binance_client | Sending LIMIT SELL order | symbol=ETHUSDT qty=0.01 price=3000.0
+2026-07-04 21:22:17 | DEBUG    | binance_client | Request params (no signature): {'symbol': 'ETHUSDT', 'side': 'SELL', 'type': 'LIMIT', 'quantity': 0.01, 'timestamp': 1751646137582, 'price': 3000.0, 'timeInForce': 'GTC'}
+2026-07-04 21:22:18 | DEBUG    | binance_client | HTTP 200 | Response: {"orderId":2847301928,"symbol":"ETHUSDT","status":"NEW","clientOrderId":"web_xyz789","price":"3000.00","avgPrice":"0.00","origQty":"0.01","executedQty":"0.00","cumQty":"0.00","cumQuote":"0","timeInForce":"GTC","type":"LIMIT","reduceOnly":false,"closePosition":false,"side":"SELL","positionSide":"BOTH","stopPrice":"0","workingType":"CONTRACT_PRICE","priceProtect":false,"origType":"LIMIT","updateTime":1751646138021}
+2026-07-04 21:22:18 | INFO     | binance_client | Order SUCCESS | orderId=2847301928 status=NEW executedQty=0.00
+2026-07-04 21:22:18 | INFO     | cli | Order flow completed successfully.
